@@ -59,7 +59,7 @@ public class TicTacToe {
 		if (a == 1) {
 			if (Checkplayer(board[0][0])) {
 				board[0][0] = 0;
-			}
+			} 
 		} else if (a == 2) {
 			if (Checkplayer(board[1][0])) {
 				board[1][0] = 0;
