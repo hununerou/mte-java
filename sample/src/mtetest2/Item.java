@@ -1,16 +1,16 @@
 package mtetest2;
 
 public class Item {
-	String itemname;
+	String itemName;
 	int price;
 
 	public Item(String itemname, int price) {
-		this.itemname = itemname;
+		this.itemName = itemname;
 		this.price = price;
 	}
 
 	public String toString() {
-		return itemname + ":" + price;
+		return itemName + ":" + price;
 	}
 
 /*	public static void main(String[] args) {

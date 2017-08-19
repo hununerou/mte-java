@@ -10,9 +10,15 @@ public class Cart {
 	public Cart(Item item) {
 		cartnum++;
 		cart.add(item);
+		cart.get(cartnum);
 	}
 
 	public String toString(){
 		return cartnum + ":" + cart;
+	}
+	public static void main(String[] args) {
+		Item item = null;
+		Cart c = new Cart(item);
+		System.out.println(c);
 	}
 }
