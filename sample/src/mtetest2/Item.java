@@ -1,5 +1,5 @@
 package mtetest2;
-
+//商品名と金額を構成する
 public class Item {
 	String itemName;
 	int price;
