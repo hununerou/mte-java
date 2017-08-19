@@ -8,17 +8,19 @@ public class Cart {
 	int sum = 0;
 
 	public Cart() {
+		cartnum++;
 		cart = new ArrayList<>();
 	}
 
-	public Cart(Item item) {
+	/*public Cart(Item item) {
 		cartnum++;
 		cart.add(item);
 
-	}
+	}*/
 
-	public int addItem(Item itemName, int num) {
-		return sum = sum + itemName.price * num;
+	public void addItem(Item itemName, int num) {
+		cart.add(itemName);
+		sum = sum + itemName.price * num;
 		// showCart(itemName, num);
 	}
 
