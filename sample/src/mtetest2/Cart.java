@@ -14,21 +14,25 @@ public class Cart {
 	public Cart(Item item) {
 		cartnum++;
 		cart.add(item);
-		cart.get(cartnum);
+
 	}
 
-	public void addItem(Item itemName, int num) {
-		sum = sum + itemName.price * num;
+	public int addItem(Item itemName, int num) {
+		return sum = sum + itemName.price * num;
+		// showCart(itemName, num);
 	}
-	
+
+	/*
+	 * public String showCart(Item itemName, int num){ return itemName.itemName
+	 * + itemName.price + itemName.price* sum; }
+	 */
 	@Override
 	public String toString() {
-		return cartnum + ":" + cart;
+		return cartnum + ":" + cart + " " + sum;
 	}
 
-/*	public static void main(String[] args) {
-		Item item = null;
-		Cart c = new Cart(item);
-		System.out.println(c);
-	}*/
+	/*
+	 * public static void main(String[] args) { Item item = null; Cart c = new
+	 * Cart(item); System.out.println(c); }
+	 */
 }
