@@ -3,12 +3,12 @@ package mtetest2;
 public class mtetest2 {
 
 	public static void main(String[] args) {
-		
+		Item item = null;
 		// initialization
-		setItems();
+	//	item = new Item(setItems());
 		
 		// make a cart
-		Cart c = new Cart();
+		Cart c = new Cart(item);
 		
 		// set items to the cart
 		setCart();
@@ -17,11 +17,7 @@ public class mtetest2 {
 		System.out.println(c);
 	}
 	
-	private static void setItems(){
-		// ("iPhone 6",80000)
-		// ("iPhone 7",90000)
-		// ("iPhone 8",100000)
-	}
+
 	
 	private static void setCart(){
 		// iPhone 6 x2

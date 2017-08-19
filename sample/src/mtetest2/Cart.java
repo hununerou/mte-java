@@ -3,13 +3,16 @@ package mtetest2;
 import java.util.ArrayList;
 
 public class Cart {
-	private ArrayList<Item> cart;
-	public static int cartnum;
+	private ArrayList<Item> cart = new ArrayList<>();
 	
-	public Cart(){
+	public static int cartnum = 0;
+
+	public Cart(Item item) {
 		cartnum++;
+		cart.add(item);
 	}
-	public void addCart()
+
+	public String toString(){
+		return cartnum + ":" + cart;
 	}
-	
 }
