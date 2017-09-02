@@ -6,7 +6,6 @@ public class MyCar extends AbstractAutomobile{
 	private int capacity;
 	//private CarType cartype;
 	public MyCar() {
-		super.toString("LightCar");
 		this.carmodel = "自家用車";
 		this.capacity = 2;
 	}
@@ -24,4 +23,7 @@ public class MyCar extends AbstractAutomobile{
 	public CarType getCarType() {
 		return this.cartype;
 	}*/
+	public String toString() {
+		return super.toString("LightCar");
+	}
 }

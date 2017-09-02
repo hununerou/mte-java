@@ -30,8 +30,9 @@ public abstract class AbstractAutomobile {
 	   else if(cartype.equals("mediumcar")) {
 		   return Cartype[2];
 	   }
-	   else 
+	   else {
 		 return "登録されていない車種です";
+	   }
    }
 
     /**
