@@ -5,11 +5,10 @@ public class MyCar extends AbstractAutomobile{
 	private String carmodel;
 	private int capacity;
 	private CarType cartype;
-	private String typename;
 	public MyCar() {
+		super.setCarType(CarType.LARGE_CAR);
 		this.carmodel = "自家用車";
 		this.capacity = 2;
-		this.cartype = CarType.LARGE_CAR;
 	}
 	
 	//車の車種を決める
@@ -24,8 +23,5 @@ public class MyCar extends AbstractAutomobile{
 	@Override
 	public CarType getCarType() {
 		return this.cartype;
-	}
-	public String getCarTypeString(){
-		return this.typename;
 	}
 }

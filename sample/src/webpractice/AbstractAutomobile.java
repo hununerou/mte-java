@@ -11,8 +11,7 @@ public abstract class AbstractAutomobile {
         MEDIUM_CAR,        //中型車
         LARGE_CAR,        //大型車
         OVERSIZE        //特大車
-    } ;
-
+    };
 
 
     /**
