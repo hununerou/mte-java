@@ -4,8 +4,8 @@ public class MyCar extends AbstractAutomobile{
 	//フィールド車種、乗車定員、車種区分
 	private String carmodel;
 	private int capacity;
-	//private CarType cartype;
 	public MyCar() {
+		super(CarType.LARGE_CAR);
 		this.carmodel = "自家用車";
 		this.capacity = 2;
 	}
@@ -20,10 +20,10 @@ public class MyCar extends AbstractAutomobile{
 		return this.capacity;
 	}
 	/*@Override
-	public CarType getCarType() {
+	public CarType getCarTypeString() {
 		return this.cartype;
 	}*/
-	public String toString() {
+	/*public String toString() {
 		return super.toString("LightCar");
-	}
+	}*/
 }
